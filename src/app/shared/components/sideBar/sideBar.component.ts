@@ -4,13 +4,10 @@ import { GifsService } from '../../../gifs/services/gifs.service';
 
 @Component({
   selector: 'shared-sideBar',
-  standalone: true,
   templateUrl: './sideBar.component.html',
   styleUrl: './sideBar.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [
-    NgFor
-  ]
+
 })
 
 export class SideBarComponent {

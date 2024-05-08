@@ -1,9 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { SharedModule } from '../shared/shared.module';
+
 import { HomePageComponent } from './pages/home/home-page.component';
 import { SearchBoxComponent } from './components/serarch-box/search-box.component';
 import { CardListComponent } from './components/card-list/card-list.component';
-import { SideBarComponent } from '../shared/components/sideBar/sideBar.component';
+import { GifsCardComponent } from './components/card/card.component';
+
 
 
 
@@ -11,15 +14,15 @@ import { SideBarComponent } from '../shared/components/sideBar/sideBar.component
   declarations: [
     HomePageComponent,
     SearchBoxComponent,
-    CardListComponent
+    CardListComponent,
+    GifsCardComponent
   ],
   imports: [
     CommonModule,
-    SideBarComponent
+    SharedModule
   ],
   exports: [
     HomePageComponent,
-    SideBarComponent
   ]
 })
 export class GifsModule { }
